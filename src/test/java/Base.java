@@ -1,16 +1,12 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class loginTest {
+public class Base {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeEach
     public void setUp() {
@@ -21,15 +17,10 @@ public class loginTest {
         driver = new ChromeDriver(options);
     }
 
-    @Test
-    public void testLogin() throws InterruptedException {
-        // Add your steps here
-        // Thread.sleep(2000);
-
-    }
-
     @AfterEach
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

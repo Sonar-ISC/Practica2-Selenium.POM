@@ -1,6 +1,6 @@
-# Practica 1 Selenium
+# Practica 2 Selenium POM
 
-Este repositorio es para practicar el uso de Selenium WebDriver con Java. También, que funcione como plantilla para proyectos futuros.
+Este repositorio es para practicar el uso de POM (Page Object Model) con Selenium WebDriver y Java.
 
 
 ## Consideraciones
@@ -22,20 +22,14 @@ Este repositorio es para practicar el uso de Selenium WebDriver con Java. Tambi�
 - [Selenium WebDriver PDF](https://drive.google.com/file/d/1vXx2OJF-xUjc7_YLAGHXSmEZkAUyExR_/view?usp=sharing)
 - [JUnit](https://junit.org/junit5/docs/current/user-guide/)
 - [Gradle](https://docs.gradle.org/current/userguide/userguide.html)
-
+- [Page Object Model](https://www.selenium.dev/documentation/en/guidelines_and_recommendations/page_object_models/)
+- [Presentación POM](Poner link de la presentación de POM)
 ## Ejercicios 
 
 ### Ejercicio 1 - Login
 
-Ingresar a la página de [SauceDemo](https://www.saucedemo.com/) y realizar un login con los datos que se te proporcionen.
+Ingresar a la página de [SauceDemo](https://www.saucedemo.com/) y realizar un login con los datos que se te proporcionen, utilizando POM.
 
-### Ejercicio 2 - Ejercicio propio
-
-Realiza un ejercicio propio que involucre el uso de Selenium WebDriver con Java. De una página de tu elección, debes tener en cuenta que el enfoque es "probar".
-
-- Crear un caso de prueba
-- Hacer la automatización de la prueba
-- Crear un pull request
 
 ## Requisitos
 
