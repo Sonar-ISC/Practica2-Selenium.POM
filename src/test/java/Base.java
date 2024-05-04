@@ -4,21 +4,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+
 public class Base {
 
     protected WebDriver driver;
 
     @BeforeEach
     public void setUp() {
-        String pathDriver = "change to your path of driver, remember that is a executable file";
+        String pathDriver = "C:\\Users\\Usuario UTP\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver",pathDriver);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         driver = new ChromeDriver(options);
+
+
     }
 
     @AfterEach
-    public void tearDown() {
+    public void tearDown() throws InterruptedException {
         if (driver != null) {
             driver.quit();
         }
