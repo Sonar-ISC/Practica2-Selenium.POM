@@ -10,7 +10,7 @@ public class Base {
 
     @BeforeEach
     public void setUp() {
-        String pathDriver = "change to your path of driver, remember that is a executable file";
+        String pathDriver = "C:\\Users\\sofia\\OneDrive\\Escritorio\\Semillero\\chromedriver-win64\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver",pathDriver);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
